@@ -1,0 +1,16 @@
+{
+  "name": "autotesting",
+  "version": "1.0.0",
+  "description": "google serch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anna Simonenko",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^86.0.0",
+    "nightwatch": "^1.5.1",
+    "selenium-server": "^3.141.59"
+  }
+}
