@@ -3,17 +3,25 @@ module.exports = {
 		browser
 			.url('https://www.google.com/')
 			.waitForElementVisible(
-				'cssSelector',
-				'#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input',
+				'css selector',
+				'body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input',
 				5000
 			);
 	},
 
 	'ввести запрос в поисковую строку google': function (browser) {
 		browser
-			.setValue('#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input', 'огурец')
-			.click('#tsf > div:nth-child(2) > div.A8SBwf.emcav > div.UUbT9 > div.aajZCb > div.tfB0Bf > center > input.gNO89b')
-			.waitForElementVisible('#logo > img',5000);
+			.setValue(
+				'css selector',
+				'body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input',
+				'огурец'
+			)
+			.click('body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf.emcav > div.UUbT9 > div.aajZCb > div.tfB0Bf > center > input.gNO89b')
+			.waitForElementVisible(
+				'css selector',
+				'#logo > img',
+				5000
+			);
 
 	},
 	'проверяем наличие результатов поиска': function (browser) {

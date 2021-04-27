@@ -9,7 +9,7 @@
   "author": "Anna Simonenko",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^86.0.0",
+    "chromedriver": "^89.0.0",
     "nightwatch": "^1.5.1",
     "selenium-server": "^3.141.59"
   }
